@@ -19,7 +19,7 @@ function exactMatch(drivers, match) {
       matches = driver[key] === match;
     }
   });
-  return 
+  return matches;
 }
 
 function exactMatchToList(drivers, match) {

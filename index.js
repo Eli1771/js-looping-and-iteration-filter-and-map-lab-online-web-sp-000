@@ -27,5 +27,5 @@ function exactMatchToList(drivers, match) {
     for (const key in match) {
       return driver[key];
     }
-  })
+  });
 }

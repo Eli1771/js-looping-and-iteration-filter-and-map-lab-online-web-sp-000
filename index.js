@@ -16,9 +16,9 @@ function exactMatch(drivers, match) {
   const matches = [];
   drivers.filter(function(driver) {
     for (const key in match) {
-      matches.push(driver[key] === match);
+      matches.push(return driver[key] === match);
     }
-  })
+  });
 }
 
 function exactMatchToList(drivers, match) {

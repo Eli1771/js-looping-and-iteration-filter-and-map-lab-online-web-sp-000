@@ -5,9 +5,7 @@ function driversWithRevenueOver(drivers, revenue) {
 }
 
 function driverNamesWithRevenueOver(drivers, revenue) {
-  const names = []; 
-  const driverObjects = driverNamesWithRevenueOver(drivers, revenue);
-  driverObjects.map(function(driver) {names.push(driver.name)});
+  return driverNamesWithRevenueOver(drivers, revenue).map(function(driver) {return driver.name});
   return names;
 }
 
